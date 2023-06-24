@@ -1,0 +1,143 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: rgb(27, 26, 26);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10% 5%;
+
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+header h1 {
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    margin-top: 70px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-section form div {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin-bottom: 60px;
+}
+
+.form-section .data_card {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-section .data_card .expirit {
+    margin-right: 50px;
+}
+
+.form-section form div input {
+    height: 100px;
+    border-radius: 10px;
+    background-color: rgb(51, 53, 55);
+    border: none;
+    color: aliceblue;
+    padding: 0px 0px 0px 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-section form div input:active {
+    background-color: rgb(58, 59, 60);
+}
+
+.form-section form div input:hover {
+    border: #783cf2 solid 2px;
+}
+
+.form-section form div button {
+    height: 100px;
+    border-radius: 60px;
+    background: radial-gradient(circle at 105.63% 11.05%, #a343f0 0, #8f3ff1 25%, #783cf2 50%, #5b3af3 75%, #2f39f4 100%);
+
+    border: none;
+    color: aliceblue;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+.form-section form label {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+@media(min-width: 1020px){
+    .form-section form div button {
+        height: 70px;
+        font-size: 30px;
+    }
+    .form-section form label {
+        font-size: 20px;
+    }
+    body {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0% 0%;
+    }
+    .form-section form div {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        margin-bottom: 40px;
+    }
+    .form-section form  {
+        padding: 0px 50px;
+    }
+    .form-section form div input {
+        height: 70px;
+    }
+}
+
+@media(min-width: 1440px){
+    header h1 {
+        font-size: 40px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .form-section form div button {
+        height: 50px;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .form-section form label {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    body {
+        height: 100vh;
+    }
+    .form-section form div {
+        width: 400px;
+        margin-bottom: 10px;
+    }
+    .form-section form  {
+        padding: 0px 50px;
+    }
+    .form-section form div input {
+        height: 50px;
+    }
+}

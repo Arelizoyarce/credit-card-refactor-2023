@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="card.css" />
+
+  </head>
+  <body>
+    <section>
+        <div class="card">
+            <div id="card_bank">
+                <img src="./assets/visa_logo.png"/>
+            </div>
+            <p>
+                CARD NUMBER
+            </p>
+            <p class="number"id="cardNumberPrint"></p>
+            <div>
+                <p>VALID THROUGH</p>
+                <p id="cardNumberExpDate"></p>
+            </div>
+        </div>
+    </section>
+    <section  class="form-section">
+        <header>
+            <h1>Payment details</h1>
+        </header>
+        <form>
+            <div>
+            <label>Card number</label>
+            <input type="number" id="cardNumber">
+        </div>
+        <div>
+            <label>Name on card</label>
+            <input type="text" id="nameCard">
+        </div>
+        <div class="data_card">
+            <div class="expirit">
+                <label>Expirity date</label>
+                <input type="text" id="cardExpiredDate">
+            </div>
+            <div>
+                <label>Segurity code</label>
+                <input type="text" id="cardCvv">
+            </div>
+        </div>
+        <div>
+            <button>Save changes</button>
+        </div>
+        </form>
+
+    </section>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
